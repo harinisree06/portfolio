@@ -60,7 +60,7 @@ const Projects = () => {
               
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tech.map((tech, i) => (
-                  <span key={i} className="text-xs font-semibold text-[var(--color-accent)] bg-[var(--color-accent)] bg-opacity-10 px-2 py-1 rounded">
+                  <span key={i} className="text-xs font-semibold text-white bg-[var(--color-accent)] bg-opacity-10 px-2 py-1 rounded">
                     {tech}
                   </span>
                 ))}
