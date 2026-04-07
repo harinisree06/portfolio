@@ -53,6 +53,9 @@ const Hero = () => {
           <a href="#contact" className="px-8 py-3 bg-[var(--color-accent)] text-[var(--color-primary)] font-bold rounded-full hover:bg-opacity-90 transition shadow-[0_0_20px_rgba(0,178,255,0.4)]">
             Contact Me
           </a>
+          <a href="https://drive.google.com/drive/folders/1uCXYaBmyGZuzMAVySZSJuk3Nk9zh7QS8?usp=sharing" target="_blank" rel="noreferrer" className="px-8 py-3 glass text-white font-bold rounded-full hover:text-[var(--color-accent)] transition">
+            Resume
+          </a>
           <a href="https://github.com/harinisree06" target="_blank" rel="noreferrer" className="p-3 glass rounded-full text-white hover:text-[var(--color-accent)] transition">
             <FaGithub size={24} />
           </a>

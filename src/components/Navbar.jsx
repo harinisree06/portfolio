@@ -20,6 +20,7 @@ const Navbar = () => {
     { name: 'Projects', href: '#projects' },
     { name: 'Experience', href: '#experience' },
     { name: 'Contact', href: '#contact' },
+    { name: 'Resume', href: 'https://drive.google.com/drive/folders/1uCXYaBmyGZuzMAVySZSJuk3Nk9zh7QS8?usp=sharing', external: true },
   ];
 
   return (
@@ -32,7 +33,13 @@ const Navbar = () => {
           
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-gray-300 hover:text-[var(--color-accent)] transition-colors">
+              <a 
+                key={link.name} 
+                href={link.href} 
+                target={link.external ? "_blank" : undefined}
+                rel={link.external ? "noreferrer" : undefined}
+                className="text-gray-300 hover:text-[var(--color-accent)] transition-colors"
+              >
                 {link.name}
               </a>
             ))}
@@ -57,6 +64,8 @@ const Navbar = () => {
             <a 
               key={link.name} 
               href={link.href} 
+              target={link.external ? "_blank" : undefined}
+              rel={link.external ? "noreferrer" : undefined}
               onClick={() => setIsOpen(false)}
               className="text-gray-300 hover:text-[var(--color-accent)] block px-2 py-1"
             >
